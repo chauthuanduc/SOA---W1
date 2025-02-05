@@ -1,0 +1,10 @@
+D:\Đại học UEH\Học kỳ 6 UEH\Kiến trúc phần mềm hướng dịch vụ\WorldDataClient\WorldDataClient\bin\Debug\WorldDataClient.exe.config
+D:\Đại học UEH\Học kỳ 6 UEH\Kiến trúc phần mềm hướng dịch vụ\WorldDataClient\WorldDataClient\bin\Debug\WorldDataClient.exe
+D:\Đại học UEH\Học kỳ 6 UEH\Kiến trúc phần mềm hướng dịch vụ\WorldDataClient\WorldDataClient\bin\Debug\WorldDataClient.pdb
+D:\Đại học UEH\Học kỳ 6 UEH\Kiến trúc phần mềm hướng dịch vụ\WorldDataClient\WorldDataClient\obj\Debug\WorldDataClient.csproj.AssemblyReference.cache
+D:\Đại học UEH\Học kỳ 6 UEH\Kiến trúc phần mềm hướng dịch vụ\WorldDataClient\WorldDataClient\obj\Debug\WorldDataClient.Form1.resources
+D:\Đại học UEH\Học kỳ 6 UEH\Kiến trúc phần mềm hướng dịch vụ\WorldDataClient\WorldDataClient\obj\Debug\WorldDataClient.Properties.Resources.resources
+D:\Đại học UEH\Học kỳ 6 UEH\Kiến trúc phần mềm hướng dịch vụ\WorldDataClient\WorldDataClient\obj\Debug\WorldDataClient.csproj.GenerateResource.cache
+D:\Đại học UEH\Học kỳ 6 UEH\Kiến trúc phần mềm hướng dịch vụ\WorldDataClient\WorldDataClient\obj\Debug\WorldDataClient.csproj.CoreCompileInputs.cache
+D:\Đại học UEH\Học kỳ 6 UEH\Kiến trúc phần mềm hướng dịch vụ\WorldDataClient\WorldDataClient\obj\Debug\WorldDataClient.exe
+D:\Đại học UEH\Học kỳ 6 UEH\Kiến trúc phần mềm hướng dịch vụ\WorldDataClient\WorldDataClient\obj\Debug\WorldDataClient.pdb

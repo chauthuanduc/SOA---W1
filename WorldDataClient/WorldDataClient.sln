@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34622.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorldDataClient", "WorldDataClient\WorldDataClient.csproj", "{6F35A3DA-E8D7-4AB2-B7DF-754E5A176FFC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6F35A3DA-E8D7-4AB2-B7DF-754E5A176FFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F35A3DA-E8D7-4AB2-B7DF-754E5A176FFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F35A3DA-E8D7-4AB2-B7DF-754E5A176FFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F35A3DA-E8D7-4AB2-B7DF-754E5A176FFC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9E4B089F-DBB0-45FD-94D2-C74C2D0E7F9B}
+	EndGlobalSection
+EndGlobal

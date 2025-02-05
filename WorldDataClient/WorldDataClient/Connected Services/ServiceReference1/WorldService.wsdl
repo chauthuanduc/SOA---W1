@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:tns="http://tempuri.org/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="GetAllCountries">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetAllCountriesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAllCountriesResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCountryByCode">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="countryCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCountryByCodeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCountryByCodeResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCityByName">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="cityName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCityByNameResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCityByNameResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCitiesByCountryCode">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="countryCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCitiesByCountryCodeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCitiesByCountryCodeResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCountriesByRegion">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="region" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCountriesByRegionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCountriesByRegionResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPopulationByCountry">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="countryCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPopulationByCountryResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetPopulationByCountryResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetAllCountriesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAllCountries" />
+  </wsdl:message>
+  <wsdl:message name="GetAllCountriesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAllCountriesResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCountryByCodeSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCountryByCode" />
+  </wsdl:message>
+  <wsdl:message name="GetCountryByCodeSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCountryByCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCityByNameSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCityByName" />
+  </wsdl:message>
+  <wsdl:message name="GetCityByNameSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCityByNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCitiesByCountryCodeSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCitiesByCountryCode" />
+  </wsdl:message>
+  <wsdl:message name="GetCitiesByCountryCodeSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCitiesByCountryCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCountriesByRegionSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCountriesByRegion" />
+  </wsdl:message>
+  <wsdl:message name="GetCountriesByRegionSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCountriesByRegionResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetPopulationByCountrySoapIn">
+    <wsdl:part name="parameters" element="tns:GetPopulationByCountry" />
+  </wsdl:message>
+  <wsdl:message name="GetPopulationByCountrySoapOut">
+    <wsdl:part name="parameters" element="tns:GetPopulationByCountryResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WorldServiceSoap">
+    <wsdl:operation name="GetAllCountries">
+      <wsdl:input message="tns:GetAllCountriesSoapIn" />
+      <wsdl:output message="tns:GetAllCountriesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCountryByCode">
+      <wsdl:input message="tns:GetCountryByCodeSoapIn" />
+      <wsdl:output message="tns:GetCountryByCodeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCityByName">
+      <wsdl:input message="tns:GetCityByNameSoapIn" />
+      <wsdl:output message="tns:GetCityByNameSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCitiesByCountryCode">
+      <wsdl:input message="tns:GetCitiesByCountryCodeSoapIn" />
+      <wsdl:output message="tns:GetCitiesByCountryCodeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCountriesByRegion">
+      <wsdl:input message="tns:GetCountriesByRegionSoapIn" />
+      <wsdl:output message="tns:GetCountriesByRegionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPopulationByCountry">
+      <wsdl:input message="tns:GetPopulationByCountrySoapIn" />
+      <wsdl:output message="tns:GetPopulationByCountrySoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WorldServiceSoap" type="tns:WorldServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetAllCountries">
+      <soap:operation soapAction="http://tempuri.org/GetAllCountries" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCountryByCode">
+      <soap:operation soapAction="http://tempuri.org/GetCountryByCode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCityByName">
+      <soap:operation soapAction="http://tempuri.org/GetCityByName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCitiesByCountryCode">
+      <soap:operation soapAction="http://tempuri.org/GetCitiesByCountryCode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCountriesByRegion">
+      <soap:operation soapAction="http://tempuri.org/GetCountriesByRegion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPopulationByCountry">
+      <soap:operation soapAction="http://tempuri.org/GetPopulationByCountry" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WorldServiceSoap12" type="tns:WorldServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetAllCountries">
+      <soap12:operation soapAction="http://tempuri.org/GetAllCountries" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCountryByCode">
+      <soap12:operation soapAction="http://tempuri.org/GetCountryByCode" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCityByName">
+      <soap12:operation soapAction="http://tempuri.org/GetCityByName" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCitiesByCountryCode">
+      <soap12:operation soapAction="http://tempuri.org/GetCitiesByCountryCode" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCountriesByRegion">
+      <soap12:operation soapAction="http://tempuri.org/GetCountriesByRegion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPopulationByCountry">
+      <soap12:operation soapAction="http://tempuri.org/GetPopulationByCountry" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WorldService">
+    <wsdl:port name="WorldServiceSoap" binding="tns:WorldServiceSoap">
+      <soap:address location="https://localhost:44325/WorldService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WorldServiceSoap12" binding="tns:WorldServiceSoap12">
+      <soap12:address location="https://localhost:44325/WorldService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
